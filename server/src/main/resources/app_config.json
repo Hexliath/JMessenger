@@ -1,0 +1,18 @@
+{
+  "system_log_level": "INFO",
+  "server_api_port": "6100",
+  "server_push_port" : "6101",
+  "server_api_path": "/api/v1",
+  "sql_host": "localhost",
+  "sql_port": "5432",
+  "sql_database": "postgres",
+  "sql_schema": "jmsg",
+  "sql_user": "postgres",
+  "sql_password": "password",
+  "default_channel_uid": "f2f62cc7-da3c-49b0-b7aa-79f7001c6afc",
+  "auth_attempt_limit": "3",
+  "auth_token_validity_hours": "5",
+  "auth_ip_block_duration_minutes": "15",
+  "auth_simultaneous_connection_limit": "5", 
+  "message_max_length": "500"
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginPanel">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <HBox alignment="CENTER_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="581.0" maxWidth="570.0" prefHeight="581.0" prefWidth="676.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="153.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="register_help_lbl" textAlignment="CENTER" textFill="#bc4d4d" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="415.0">
+                           <children>
+                              <TextField fx:id="server_url_tf" prefHeight="32.0" promptText="Server url" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button disable="true" maxHeight="32.0" mnemonicParsing="false" prefHeight="32.0">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@assets/cog.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="-20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="415.0">
+                           <children>
+                              <TextField fx:id="default_username_tf" prefHeight="32.0" promptText="Default username" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button disable="true" maxHeight="32.0" mnemonicParsing="false" prefHeight="32.0">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@assets/user1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox spacing="10.0">
+                           <children>
+                              <VBox alignment="CENTER">
+                                 <children>
+                                    <Label text="Port API" />
+                                    <HBox alignment="CENTER" prefHeight="35.0" prefWidth="415.0">
+                                       <children>
+                                          <TextField fx:id="api_port_tf" alignment="CENTER" prefHeight="32.0" promptText="8000" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0">
+                                 <children>
+                                    <Label text="Port push " />
+                                    <HBox alignment="CENTER" prefHeight="35.0" prefWidth="415.0">
+                                       <children>
+                                          <TextField fx:id="push_port_tf" alignment="CENTER" prefHeight="32.0" promptText="8001" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="30.0">
+                           <children>
+                              <Button fx:id="config_cancel_btn" cancelButton="true" mnemonicParsing="false" onAction="#handleButtonCancelButton" prefHeight="32.0" prefWidth="67.0" text="Cancel" />
+                              <Button fx:id="config_save_btn" defaultButton="true" mnemonicParsing="false" onAction="#handleButtonSaveConfig" prefHeight="32.0" prefWidth="67.0" text="Save" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets top="50.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="-40.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

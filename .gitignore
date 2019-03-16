@@ -1,0 +1,8 @@
+# MAC OS files
+.DS_Store
+
+# IDE configuration
+.idea/
+
+# Compiled sources
+target/
